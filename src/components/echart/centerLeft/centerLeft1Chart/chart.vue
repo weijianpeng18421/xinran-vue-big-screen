@@ -55,9 +55,7 @@ export default {
             bottom: 0,
             x: "center",
             data: newData.xData,
-            textStyle: {
-              color: "#fff"
-            }
+            color: "#fff"
           },
           series: [
             {

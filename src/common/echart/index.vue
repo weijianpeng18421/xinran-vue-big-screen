@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import tdTheme from './theme.json' // 引入默认主题
-import * as echarts from 'echarts'
+import tdTheme from './theme.json'
+import * as echarts from "echarts"; // 引入默认主题
 
 export default {
   name: 'echart',

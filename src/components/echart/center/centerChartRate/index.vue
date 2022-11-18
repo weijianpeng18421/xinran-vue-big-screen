@@ -2,18 +2,19 @@
   <div>
     <!-- 通过率/达标率 -->
     <chart
-      :options="options"
-      :id="id"
-      height="100px"
-      width="100px"
+        :options="options"
+        :id="id"
+        height="100px"
+        width="100px"
     ></chart>
   </div>
 </template>
 
 <script>
 import chart from '@/common/echart/index.vue'
+
 export default {
-  data () {
+  data() {
     return {
       options: {},
     };
@@ -51,38 +52,34 @@ export default {
   watch: {
     // tips 是会变更的数据，所以进行监听
     tips: {
-      handler (newData) {
+      handler(newData) {
         this.options = {
-          title:{
+          title: {
             text: newData * 1 + "%",
             x: "center",
             y: "center",
-            textStyle: {
-              color: this.colorObj.textStyle,
-              fontSize: 16
-            }
+            color: this.colorObj.textStyle,
+            fontSize: 16
           },
           series: [
             {
               type: "pie",
               radius: ["75%", "80%"],
               center: ["50%", "50%"],
-              hoverAnimation: false,
+              emphasis: {
+                scale: false
+              },
               color: this.colorObj.series.color,
               label: {
-                normal: {
-                  show: false
-                }
+                show: false
               },
               data: [
                 {
                   value: newData,
                   itemStyle: {
-                    normal: {
-                      color: this.colorObj.series.dataColor.normal,
-                      shadowBlur: 10,
-                      shadowColor: this.colorObj.series.dataColor.shadowColor
-                    }
+                    color: this.colorObj.series.dataColor.normal,
+                    shadowBlur: 10,
+                    shadowColor: this.colorObj.series.dataColor.shadowColor
                   }
                 },
                 {

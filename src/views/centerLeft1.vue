@@ -36,7 +36,6 @@
 
 <script setup>
 import CenterLeft1Chart from '@/components/echart/centerLeft/centerLeft1Chart/index.vue'
-import {onMounted} from "vue"
 
 const numberData = [
   {

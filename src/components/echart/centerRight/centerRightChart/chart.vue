@@ -32,10 +32,8 @@ export default {
       handler(newData) {
         // 固定样式数据
         let lineStyle = {
-          normal: {
-            width: 1,
-            opacity: 0.5
-          }
+          width: 1,
+          opacity: 0.5
         };
 
         this.options = {
@@ -44,10 +42,8 @@ export default {
             shape: "circle",
             splitNumber: 5,
             radius: ["0%", "65%"],
-            name: {
-              textStyle: {
-                color: "rgb(238, 197, 102)"
-              }
+            axisName: {
+              color: "rgb(238, 197, 102)"
             },
             splitLine: {
               lineStyle: {
@@ -78,14 +74,10 @@ export default {
               data: newData.dataBJ,
               symbol: "none",
               itemStyle: {
-                normal: {
-                  color: "#F9713C"
-                }
+                color: "#F9713C"
               },
               areaStyle: {
-                normal: {
-                  opacity: 0.1
-                }
+                opacity: 0.1
               }
             },
             {
@@ -95,14 +87,10 @@ export default {
               data: newData.dataSH,
               symbol: "none",
               itemStyle: {
-                normal: {
-                  color: "#B3E4A1"
-                }
+                color: "#B3E4A1"
               },
               areaStyle: {
-                normal: {
-                  opacity: 0.05
-                }
+                opacity: 0.05
               }
             },
             {
@@ -112,14 +100,10 @@ export default {
               data: newData.dataGZ,
               symbol: "none",
               itemStyle: {
-                normal: {
-                  color: "rgb(238, 197, 102)"
-                }
+                color: "rgb(238, 197, 102)"
               },
               areaStyle: {
-                normal: {
-                  opacity: 0.05
-                }
+                opacity: 0.05
               }
             } //end
           ]

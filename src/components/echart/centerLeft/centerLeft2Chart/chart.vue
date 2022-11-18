@@ -88,10 +88,8 @@ export default {
           showLegendSymbol: true,
           tooltip: {
             trigger: 'item',
-            textStyle: {
-              fontSize: 14,
-              lineHeight: 22,
-            },
+            fontSize: 14,
+            lineHeight: 22,
             position: point => {
               // 固定在顶部
               return [point[0] + 50, point[1] - 20];
@@ -104,8 +102,6 @@ export default {
             */
           },
           visualMap: {
-            min: 0,
-            max: 10,
             show: false,
             seriesIndex: 0,
             // 颜色
@@ -122,14 +118,12 @@ export default {
             left: '16%',
             map: '福建',
             roam: false,
-            itemStyle: {
-              normal: {
-                areaColor: 'rgba(0,0,0,0)',
-                shadowColor: 'rgba(7,114,204, .8)',
-                shadowOffsetX: 5,
-                shadowOffsetY: 5,
-              },
-              emphasis: {
+            emphasis: {
+              areaColor: 'rgba(0,0,0,0)',
+              shadowColor: 'rgba(7,114,204, .8)',
+              shadowOffsetX: 5,
+              shadowOffsetY: 5,
+              itemStyle: {
                 areaColor: '#00aeef',
               },
             },
@@ -143,16 +137,14 @@ export default {
               mapType: '福建', // 自定义扩展图表类型
               top: '10%',
               left: '16%',
-              itemStyle: {
-                normal: {
-                  color: 'red',
-                  areaColor: 'rgba(19,54,162, .5)',
-                  borderColor: 'rgba(0,242,252,.3)',
-                  borderWidth: 1,
-                  shadowBlur: 7,
-                  shadowColor: '#00f2fc',
-                },
-                emphasis: {
+              emphasis: {
+                color: 'red',
+                areaColor: 'rgba(19,54,162, .5)',
+                borderColor: 'rgba(0,242,252,.3)',
+                borderWidth: 1,
+                shadowBlur: 7,
+                shadowColor: '#00f2fc',
+                itemStyle: {
                   areaColor: '#4f7fff',
                   borderColor: 'rgba(0,242,252,.6)',
                   borderWidth: 2,
@@ -160,18 +152,14 @@ export default {
                   shadowColor: '#00f2fc',
                 },
               },
-              label: {
+              emphasis: {
                 formatter: params => `${params.name}`,
                 show: true,
                 position: 'insideRight',
-                textStyle: {
-                  fontSize: 14,
-                  color: '#efefef',
-                },
-                emphasis: {
-                  textStyle: {
-                    color: '#fff',
-                  },
+                fontSize: 14,
+                color: '#efefef',
+                label: {
+                  color: '#fff',
                 },
               },
               data: newData,
@@ -190,11 +178,9 @@ export default {
               },
               zlevel: 1,
               itemStyle: {
-                normal: {
-                  color: '#99FBFE',
-                  shadowBlur: 5,
-                  shadowColor: '#fff',
-                },
+                color: '#99FBFE',
+                shadowBlur: 5,
+                shadowColor: '#fff',
               },
               data: convertData(seriesData),
             },

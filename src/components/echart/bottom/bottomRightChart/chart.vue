@@ -104,11 +104,9 @@ export default {
         this.options = {
           title: {
             text: '',
-            textStyle: {
-              color: '#D3D6DD',
-              fontSize: 24,
-              fontWeight: 'normal'
-            },
+            color: '#D3D6DD',
+            fontSize: 24,
+            fontWeight: 'normal',
             subtext: newData.year + '/' + newData.weekCategory[6],
             subtextStyle: {
               color: '#fff',
@@ -125,10 +123,8 @@ export default {
             itemWidth: 12,
             itemHeight: 12,
             data: ['平均指标', '我的指标'],
-            textStyle: {
-              color: '#fff',
-              fontSize: 14
-            }
+            color: '#fff',
+            fontSize: 14
           },
           tooltip: {
             trigger: 'item'
@@ -136,7 +132,7 @@ export default {
           radar: {
             center: ['68%', '27%'],
             radius: '40%',
-            name: {
+            axisName: {
               color: '#fff'
             },
             splitNumber: 8,
@@ -165,19 +161,15 @@ export default {
             indicator: [
               {
                 name: '服务态度',
-                max: newData.maxData
               },
               {
                 name: '产品质量',
-                max: 10
               },
               {
                 name: '任务效率',
-                max: 12
               },
               {
                 name: '售后保障',
-                max: 3.5
               }
             ]
           },
@@ -206,7 +198,6 @@ export default {
               color: 'rgba(255,255,255,.5)',
               fontSize: 14
             },
-            max: newData.maxData,
             splitNumber: 4,
 
             axisLine: {
@@ -236,48 +227,36 @@ export default {
                   value: newData.radarDataAvg[6],
                   name: '平均指标',
                   itemStyle: {
-                    normal: {
-                      color: '#f8d351'
-                    }
+                    color: '#f8d351'
                   },
                   lineStyle: {
-                    normal: {
-                      opacity: 0
-                    }
+                    opacity: 0
                   },
                   areaStyle: {
-                    normal: {
-                      color: '#f8d351',
-                      shadowBlur: 25,
-                      shadowColor: 'rgba(248,211,81,.3)',
-                      shadowOffsetX: 0,
-                      shadowOffsetY: -10,
-                      opacity: 1
-                    }
+                    color: '#f8d351',
+                    shadowBlur: 25,
+                    shadowColor: 'rgba(248,211,81,.3)',
+                    shadowOffsetX: 0,
+                    shadowOffsetY: -10,
+                    opacity: 1
                   }
                 },
                 {
                   value: newData.radarData[6],
                   name: '我的指标',
                   itemStyle: {
-                    normal: {
-                      color: '#43dfa2'
-                    }
+                    color: '#43dfa2'
                   },
                   lineStyle: {
-                    normal: {
-                      opacity: 0
-                    }
+                    opacity: 0
                   },
                   areaStyle: {
-                    normal: {
-                      color: this.colorList.linearGtoB,
-                      shadowBlur: 15,
-                      shadowColor: 'rgba(0,0,0,.2)',
-                      shadowOffsetX: 0,
-                      shadowOffsetY: 5,
-                      opacity: 0.8
-                    }
+                    color: this.colorList.linearGtoB,
+                    shadowBlur: 15,
+                    shadowColor: 'rgba(0,0,0,.2)',
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 5,
+                    opacity: 0.8
                   }
                 }
               ]
@@ -289,20 +268,14 @@ export default {
               symbol: 'emptyCircle',
               symbolSize: 8,
               itemStyle: {
-                normal: {
-                  color: '#fff'
-                }
+                color: '#fff'
               },
               lineStyle: {
-                normal: {
-                  color: this.colorList.linearBtoG,
-                  width: 3
-                }
+                color: this.colorList.linearBtoG,
+                width: 3
               },
               areaStyle: {
-                normal: {
-                  color: this.colorList.areaBtoG
-                }
+                color: this.colorList.areaBtoG
               },
               data: newData.weekLineData,
               lineSmooth: true,
@@ -316,14 +289,10 @@ export default {
                 ],
                 precision: 0,
                 label: {
-                  normal: {
-                    formatter: '平均值: \n {c}'
-                  }
+                  formatter: '平均值: \n {c}'
                 },
                 lineStyle: {
-                  normal: {
-                    color: 'rgba(248,211,81,.7)'
-                  }
+                  color: 'rgba(248,211,81,.7)'
                 }
               },
               tooltip: {
@@ -337,11 +306,9 @@ export default {
               name: '占位背景',
               type: 'bar',
               itemStyle: {
-                normal: {
-                  show: true,
-                  color: '#000',
-                  opacity: 0
-                }
+                show: true,
+                color: '#000',
+                opacity: 0
               },
               silent: true,
               barWidth: '50%',

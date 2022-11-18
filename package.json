@@ -1,7 +1,7 @@
 {
   "name": "xinran",
   "version": "1.0.0",
-  "description": "big-screen-vue升级而来（js+vue3+vite+pinia+fontawesome+datav+自适应）",
+  "description": "big-screen-vue升级而来（js+vue3+vite+pinia+fontawesome+echarts5+datav+自适应）",
   "author": "魏建鹏 <784952975@qq.com>",
   "scripts": {
     "dev": "vite",
@@ -32,6 +32,7 @@
     "@vue/test-utils": "^2.0.2",
     "jsdom": "^20.0.0",
     "sass": "^1.56.1",
+    "unplugin-auto-import": "^0.11.4",
     "vite": "^3.0.9",
     "vitest": "^0.23.0"
   }

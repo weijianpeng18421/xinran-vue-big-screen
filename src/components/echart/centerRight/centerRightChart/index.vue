@@ -12,12 +12,12 @@ export default {
     return {
       cdata: {
         indicatorData: [
-          {name: "data1", max: 300},
-          {name: "data2", max: 250},
-          {name: "data3", max: 300},
-          {name: "data4", max: 5},
-          {name: "data5", max: 200},
-          {name: "data6", max: 100}
+          {name: "data1"},
+          {name: "data2"},
+          {name: "data3"},
+          {name: "data4"},
+          {name: "data5"},
+          {name: "data6"}
         ],
         dataBJ: [
           [94, 69, 114, 2.08, 73, 39, 22],

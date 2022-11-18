@@ -100,7 +100,6 @@ import BottomLeft from './bottomLeft.vue'
 import BottomRight from './bottomRight.vue'
 
 import {formatTime} from '../utils'
-import {onBeforeUnmount, onMounted, ref, getCurrentInstance} from "vue";
 
 const {proxy} = getCurrentInstance()
 
@@ -149,7 +148,7 @@ function timeFn() {
 function cancelLoading() {
   setTimeout(() => {
     loading.value = false
-  }, 500)
+  }, 50)
 }
 
 function calcRate() {

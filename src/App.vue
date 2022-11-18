@@ -1,8 +1,5 @@
 <script setup>
-import * as echarts from 'echarts'
-import {provide} from 'vue'
-// 使用provide/inject引入echart
-provide('echarts', echarts)
+
 </script>
 
 <template>
